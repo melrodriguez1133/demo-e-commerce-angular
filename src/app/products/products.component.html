@@ -1,0 +1,14 @@
+<div class="cart-icon">
+    <i class="fas fa-shopping-cart"></i> <!-- Icono de carrito -->
+  </div>
+
+<div class="product-container">
+    <div class="product-card" *ngFor="let product of products">
+      <img [src]="product.image" alt="{{ product.title }}">
+      <h3 class="title">{{ product.title }}</h3>
+      <p class="description">{{ product.description }}</p>
+      <h2 class="price">{{product.price}} Bs</h2>
+      <button class="add-to-cart-button" (click)="addToCart(product)">Agregar al carrito</button>
+    </div>
+  </div>
+  

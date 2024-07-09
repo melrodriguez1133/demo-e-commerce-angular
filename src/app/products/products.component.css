@@ -1,0 +1,109 @@
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+   /* justify-content: space-around; /* Distribuye los elementos con espacio alrededor */
+    padding: 20px;
+    background-color: #121212; /* Fondo oscuro */
+    color: white; /* Color de texto para tema oscuro */
+  }
+  
+  .product-card {
+    background-color: #1f1f1f; /* Color de fondo ligeramente más claro */
+    border-radius: 8px;
+    padding: 16px;
+    margin: 10px;
+    width: calc(30% - 20px); /* Ancho de tarjeta para 3 tarjetas por fila con margen */
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .product-card img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  .product-card h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+  
+  .product-card p {
+    font-size: 0.9em;
+    margin: 10px 0;
+  }
+
+  .product-image {
+    max-width: 100%; /* Asegura que la imagen se ajuste dentro del contenedor */
+    height: auto; /* Permite que la altura se ajuste proporcionalmente */
+    border-radius: 8px;
+  }
+  
+  .title {
+    font-size: 1.2em;
+    margin: 10px 0;
+    text-align: center; /* Centra el título */
+  }
+  
+  .description {
+    font-size: 0.9em;
+    text-align: left; /* Alinea la descripción a la izquierda */
+    margin-left: 10px; /* Añade un pequeño margen izquierdo */
+  }
+  
+  .price {
+    font-size: 1.1em;
+    text-align: left; /* Alinea el precio a la izquierda */
+    margin-left: 10px; /* Añade un pequeño margen izquierdo */
+    color: #ffc107; /* Color amarillo para el precio */
+  }
+
+  i{
+    font-size:30px;
+    color:white;
+    padding: 2% 1% 0% 95%;
+  }
+  .cart-icon {
+    position:flex;
+    background-color:  #121212; /* Fondo oscuro */
+  }
+    
+  .add-to-cart-button {
+    background-color: #28a745; /* Botón verde */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-to-cart-button:hover {
+    background-color: #218838;
+  }
+  
+  @media (max-width: 1024px) {
+    .product-card {
+      width: calc(45% - 20px); /* Two cards per row on smaller screens */
+    }
+    i {
+      font-size: 30px; /* Adjust font size for smaller screens */
+      padding: 2% 1% 0% 90%; /* Adjust padding for smaller screens */
+    }
+    .cart-icon {
+      padding: 8px; /* Adjust padding for smaller screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .product-card {
+      width: calc(100% - 20px); /* One card per row on smaller screens */
+    }
+    i {
+      font-size:30px; /* Adjust font size for smaller screens */
+      padding: 2% 1% 0% 85%; /* Adjust padding for smaller screens */
+    }
+    .cart-icon {
+      padding: 6px; /* Adjust padding for smaller screens */
+    }
+  }
+  
